@@ -1,0 +1,15 @@
+provider "aws" {
+  access_key = "XXXXXXXXXXXXXXX"
+  secret_key = "YYYYYYYYYYYYYYYYYYYYYYYYY"
+  region     = "us-east-1"
+}
+
+resource "aws_instance" "apache" {
+  ami           = "ami-0855b80ce9600fe3c"
+  instance_type = "t2.micro"
+  key_name = "cckeypair"
+
+  tags {
+    Name = "apache-server"
+  }
+}
