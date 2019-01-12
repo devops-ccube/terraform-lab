@@ -1,0 +1,3 @@
+variable "kp" {
+  default = "cckeypair"
+}
