@@ -18,9 +18,3 @@ resource "aws_s3_bucket_object" "uploadfile" {
     //content = "application/json"
 }
 
-module "vault" {
-  source  = "hashicorp/vault/aws"
-  version = "0.11.3"
-
-  # insert the 4 required variables here
-}
