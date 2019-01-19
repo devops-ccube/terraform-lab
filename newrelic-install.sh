@@ -3,7 +3,7 @@ set -e
 
 echo "------------ Install NewRelic --------------"
 
-echo "license_key: 59e404a724fa347f4ebf34bf5c0a12475e77eaea" | sudo tee -a /etc/newrelic-infra.yml
+echo "license_key: '<YOUR_NEWRELIC_KEY>' | sudo tee -a /etc/newrelic-infra.yml
 
 curl https://download.newrelic.com/infrastructure_agent/gpg/newrelic-infra.gpg | sudo apt-key add -
 
